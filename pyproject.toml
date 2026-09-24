@@ -1,0 +1,32 @@
+[project]
+name = "1-chatbot-lib"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shahzeel", email = "shahzeelahmadbrand@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.34.0",
+    "google-generativeai>=0.8.0",
+    "openai>=1.40.0",
+    "pydantic>=2.8.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.0",
+    "tenacity>=8.5.0",
+]
+
+[project.scripts]
+1-chatbot-lib = "1_chatbot_lib:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.8",
+]
