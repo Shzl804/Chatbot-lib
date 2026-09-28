@@ -5,7 +5,7 @@ plus an optional system prompt. It doesn't know about any provider —
 ChatBot is the only thing that reads from it and feeds it into a
 provider call. Kept separate so it can be swapped, persisted, or
 inspected on its own.
-""" 
+"""
 
 import json
 from pathlib import Path
@@ -22,7 +22,7 @@ class Session:
         Args:
             system_prompt: Instructions sent with every request.
             max_history: Max number of *turn pairs* (user+assistant) to
-                kee p. Older turns are dropped first. None = unlimited.
+                keep. Older turns are dropped first. None = unlimited.
         """
         self.system_prompt = system_prompt
         self.max_history = max_history

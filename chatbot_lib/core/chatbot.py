@@ -13,7 +13,7 @@ It ties together a provider (does the actual API call) and a Session
 from pathlib import Path
 from typing import Generator, Optional, Type, Union
 
-from ..providers import BaseProvider, get_provider_class    
+from ..providers import BaseProvider, get_provider_class
 from .session import Session
 
 
@@ -82,4 +82,3 @@ class ChatBot:
 
     def __repr__(self) -> str:
         return f"ChatBot(model={self.model!r}, turns={len(self.session)})"
- 

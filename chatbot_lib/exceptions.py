@@ -1,10 +1,10 @@
-    """Custom exceptions for chatbot_lib.
+"""Custom exceptions for chatbot_lib.
 
-    Keeping these in one place means users can do:
-        from chatbot_lib import ProviderError
-    and catch exactly what they need, instead of guessing which
-    underlying SDK's exception type might be raised.
-    """
+Keeping these in one place means users can do:
+    from chatbot_lib import ProviderError
+and catch exactly what they need, instead of guessing which
+underlying SDK's exception type might be raised.
+"""
 
 
 class ChatbotLibError(Exception):
