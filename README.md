@@ -26,7 +26,7 @@ User's app
     v
 +----------------------------------------------------+
 |                     yourlib (core)                  |
-|                                                      |
+|                                                        |
 |   +--------------------------------------------+    |
 |   |              ChatBot class                  |    |
 |   |   public interface, takes model + api_key   |    |
